@@ -22,13 +22,13 @@
 
   <script>
     // Enter your API client configuration
-    var oauthUri = 'https://auth.europe-west1.gcp.commercetools.com';
-    var baseUri = 'https://auth.europe-west1.gcp.commercetools.com';
+    var oauthUri = 'https://api.us-central1.gcp.commercetools.com';
+    var baseUri = 'https://api.us-central1.gcp.commercetools.com';
     var credentials = {
-      clientId: 'keVo9CyFCe8ttWKCQE5zZOr6',
-      clientSecret: '63HNzyYWKWMSK2Hxnvjs4MpA25SVUWY7',
+      clientId: 'Vrp-x6OgaqNC3NP8zy5t2_6J',
+      clientSecret: 'W64k47cpe31O7uZeEuU0dSIBlrH2kVCw',
     };
-    var projectKey = 'ecommerce-quantum';
+    var projectKey = 'e-commerce-project';
 
     // Builds the client
     var { ClientBuilder } = window['@commercetools/sdk-client-v2'];
@@ -37,7 +37,7 @@
       .build();
     var { createApiBuilderFromCtpClient } =
       window['@commercetools/platform-sdk'];
-    var apiRoot = createApiBuilderFromCtpClient(client).withProjectKey('ecommerce-quantum');
+    var apiRoot = createApiBuilderFromCtpClient(client).withProjectKey('e-commerce-project');
 
     // Returns the Project details
     function getProjectDetails() {
